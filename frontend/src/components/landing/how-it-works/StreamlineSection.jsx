@@ -39,14 +39,14 @@ const featureCards = [
 
 export function StreamlineSection() {
   return (
-    <section className="py-10 lg:py-12 bg-slate-50">
+    <section className="py-10 lg:py-12 bg-slate-50 dark:bg-slate-900">
       <Container>
         {/* Section Header */}
         <div className="text-center mb-10 lg:mb-12">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 mb-4">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 dark:text-slate-100 mb-4">
             Run warranties at scale
           </h2>
-          <p className="text-sky-600 text-base lg:text-lg font-medium max-w-3xl mx-auto">
+          <p className="text-sky-600 dark:text-sky-400 text-base lg:text-lg font-medium max-w-3xl mx-auto">
             From QR issuance and registrations to claims and analytics—everything in one place for your warranty program.
           </p>
         </div>
@@ -58,15 +58,15 @@ export function StreamlineSection() {
             return (
               <div
                 key={card.title}
-                className="rounded-2xl bg-slate-100/80 p-6 shadow-sm border border-slate-200/60"
+                className="rounded-2xl bg-slate-100/80 dark:bg-slate-800/80 p-6 shadow-sm border border-slate-200/60 dark:border-slate-700/80"
               >
                 <div
-                  className={`w-12 h-12 rounded-xl ${card.iconBg} flex items-center justify-center mb-5`}
+                  className={`w-12 h-12 rounded-xl ${card.iconBg} dark:bg-slate-700 flex items-center justify-center mb-5`}
                 >
                   <Icon className={`w-6 h-6 ${card.iconColor}`} strokeWidth={1.5} />
                 </div>
-                <h3 className="text-lg font-bold text-slate-900 mb-3">{card.title}</h3>
-                <p className="text-slate-600 text-sm leading-relaxed">{card.description}</p>
+                <h3 className="text-lg font-bold text-slate-900 dark:text-slate-100 mb-3">{card.title}</h3>
+                <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">{card.description}</p>
               </div>
             );
           })}

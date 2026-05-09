@@ -46,14 +46,14 @@ export function ContactForm() {
   };
 
   return (
-    <div className="bg-white rounded-2xl p-5 lg:p-6 border border-slate-200 shadow-sm">
-      <h3 className="text-xl font-bold text-slate-900 mb-1">Send us a Message</h3>
-      <p className="text-sm text-slate-500 mb-4">Expect a response within 24 business hours.</p>
+    <div className="bg-white dark:bg-slate-800 rounded-2xl p-5 lg:p-6 border border-slate-200 dark:border-slate-700 shadow-sm">
+      <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100 mb-1">Send us a Message</h3>
+      <p className="text-sm text-slate-500 dark:text-slate-400 mb-4">Expect a response within 24 business hours.</p>
 
       <form onSubmit={handleSubmit} className="space-y-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
-            <label htmlFor="firstName" className="block text-sm font-medium text-slate-700 mb-1.5">
+            <label htmlFor="firstName" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1.5">
               First name
             </label>
             <input
@@ -62,12 +62,12 @@ export function ContactForm() {
               name="firstName"
               value={formData.firstName}
               onChange={handleChange}
-              className="w-full px-4 py-2 border border-slate-200 rounded-lg text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#0284c7]/20 focus:border-[#0284c7] bg-white"
+              className="w-full px-4 py-2 border border-slate-200 dark:border-slate-600 rounded-lg text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-[#0284c7]/20 focus:border-[#0284c7] bg-white dark:bg-slate-900"
               placeholder="John"
             />
           </div>
           <div>
-            <label htmlFor="lastName" className="block text-sm font-medium text-slate-700 mb-1.5">
+            <label htmlFor="lastName" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1.5">
               Last name
             </label>
             <input
@@ -76,14 +76,14 @@ export function ContactForm() {
               name="lastName"
               value={formData.lastName}
               onChange={handleChange}
-              className="w-full px-4 py-2 border border-slate-200 rounded-lg text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#0284c7]/20 focus:border-[#0284c7] bg-white"
+              className="w-full px-4 py-2 border border-slate-200 dark:border-slate-600 rounded-lg text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-[#0284c7]/20 focus:border-[#0284c7] bg-white dark:bg-slate-900"
               placeholder="Doe"
             />
           </div>
         </div>
 
         <div>
-          <label htmlFor="corporateEmail" className="block text-sm font-medium text-slate-700 mb-1.5">
+          <label htmlFor="corporateEmail" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1.5">
             Corporate Email
           </label>
           <input
@@ -92,13 +92,13 @@ export function ContactForm() {
             name="corporateEmail"
             value={formData.corporateEmail}
             onChange={handleChange}
-            className="w-full px-4 py-2 border border-slate-200 rounded-lg text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#0284c7]/20 focus:border-[#0284c7] bg-white"
+            className="w-full px-4 py-2 border border-slate-200 dark:border-slate-600 rounded-lg text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-[#0284c7]/20 focus:border-[#0284c7] bg-white dark:bg-slate-900"
             placeholder="john.doe@company.com"
           />
         </div>
 
         <div>
-          <label htmlFor="message" className="block text-sm font-medium text-slate-700 mb-1.5">
+          <label htmlFor="message" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1.5">
             Message
           </label>
           <textarea
@@ -107,7 +107,7 @@ export function ContactForm() {
             value={formData.message}
             onChange={handleChange}
             rows={4}
-            className="w-full px-4 py-2 border border-slate-200 rounded-lg text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#0284c7]/20 focus:border-[#0284c7] bg-white resize-none"
+            className="w-full px-4 py-2 border border-slate-200 dark:border-slate-600 rounded-lg text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-[#0284c7]/20 focus:border-[#0284c7] bg-white dark:bg-slate-900 resize-none"
             placeholder="How can we help your business today?"
           />
         </div>

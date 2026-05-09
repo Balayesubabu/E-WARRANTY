@@ -64,7 +64,7 @@ export function AuthChoiceModal({ open, onOpenChange }) {
         iconText: "text-sky-700",
         primary: "bg-sky-600 hover:bg-sky-700 focus-visible:ring-sky-500/30",
         secondary:
-          "bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 focus-visible:ring-sky-500/25",
+          "bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-600 text-slate-700 dark:text-slate-200 focus-visible:ring-sky-500/25",
       },
       amber: {
         ring: "focus-visible:ring-amber-500/30",
@@ -74,7 +74,7 @@ export function AuthChoiceModal({ open, onOpenChange }) {
         iconText: "text-amber-700",
         primary: "bg-amber-600 hover:bg-amber-700 focus-visible:ring-amber-500/30",
         secondary:
-          "bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 focus-visible:ring-amber-500/25",
+          "bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-600 text-slate-700 dark:text-slate-200 focus-visible:ring-amber-500/25",
       },
       slate: {
         ring: "focus-visible:ring-slate-500/30",
@@ -84,7 +84,7 @@ export function AuthChoiceModal({ open, onOpenChange }) {
         iconText: "text-slate-800",
         primary: "bg-slate-900 hover:bg-slate-800 focus-visible:ring-slate-500/30",
         secondary:
-          "bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 focus-visible:ring-slate-500/25",
+          "bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-600 text-slate-700 dark:text-slate-200 focus-visible:ring-slate-500/25",
       },
     };
     const t = tones[tone] ?? tones.sky;
@@ -93,7 +93,7 @@ export function AuthChoiceModal({ open, onOpenChange }) {
       <section
         className={[
           "group relative flex h-full min-h-0 flex-col overflow-hidden rounded-2xl border p-4 sm:p-5 text-left",
-          "bg-white",
+          "bg-white dark:bg-slate-800",
           "transition-all duration-300",
           "hover:-translate-y-1 hover:scale-[1.01] hover:shadow-xl hover:shadow-slate-900/10",
           "motion-reduce:transition-none motion-reduce:hover:transform-none",
@@ -128,8 +128,8 @@ export function AuthChoiceModal({ open, onOpenChange }) {
           </div>
 
           <div className="min-w-0 flex-1">
-            <h3 className="text-base sm:text-lg font-semibold text-slate-900 leading-snug">{title}</h3>
-            <p className="text-sm text-slate-600 mt-1 leading-relaxed">{subtitle}</p>
+            <h3 className="text-base sm:text-lg font-semibold text-slate-900 dark:text-slate-100 leading-snug">{title}</h3>
+            <p className="text-sm text-slate-600 dark:text-slate-300 mt-1 leading-relaxed">{subtitle}</p>
           </div>
           </div>
 
@@ -147,7 +147,7 @@ export function AuthChoiceModal({ open, onOpenChange }) {
               title={a.tooltip || undefined}
               className={[
                 a.variant === "link"
-                  ? "w-full inline-flex items-center justify-start gap-2 rounded-lg px-2 py-2 text-sm font-semibold text-slate-700 hover:text-slate-900 hover:bg-slate-50"
+                  ? "w-full inline-flex items-center justify-start gap-2 rounded-lg px-2 py-2 text-sm font-semibold text-slate-700 dark:text-slate-200 hover:text-slate-900 dark:hover:text-white hover:bg-slate-50 dark:hover:bg-slate-700/50"
                   : "w-full inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold",
                 "transition-colors",
                 "focus-visible:outline-none focus-visible:ring-4",
@@ -174,7 +174,7 @@ export function AuthChoiceModal({ open, onOpenChange }) {
           </div>
 
           {footnote ? (
-            <p className="mt-auto pt-3 text-xs text-slate-500 leading-relaxed">
+            <p className="mt-auto pt-3 text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
               {footnote}
             </p>
           ) : null}
@@ -185,7 +185,7 @@ export function AuthChoiceModal({ open, onOpenChange }) {
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-2xl bg-white p-0 gap-0 overflow-hidden rounded-2xl border border-slate-200 shadow-xl max-h-[85vh]">
+      <DialogContent className="sm:max-w-2xl bg-white dark:bg-slate-900 p-0 gap-0 overflow-hidden rounded-2xl border border-slate-200 dark:border-slate-700 shadow-xl max-h-[85vh]">
         <motion.div
           className="flex flex-col min-h-0"
           variants={staggerParent}
@@ -193,18 +193,18 @@ export function AuthChoiceModal({ open, onOpenChange }) {
           animate="visible"
         >
           <motion.div variants={staggerItem}>
-            <DialogHeader className="px-5 sm:px-7 pt-4 sm:pt-5 pb-3 border-b border-slate-100">
-              <DialogTitle className="text-xl sm:text-2xl font-semibold text-slate-900 text-center">
+            <DialogHeader className="px-5 sm:px-7 pt-4 sm:pt-5 pb-3 border-b border-slate-100 dark:border-slate-800">
+              <DialogTitle className="text-xl sm:text-2xl font-semibold text-slate-900 dark:text-slate-100 text-center">
                 Choose how you want to continue
               </DialogTitle>
-              <p className="text-sm text-slate-600 text-center mt-1">
+              <p className="text-sm text-slate-600 dark:text-slate-300 text-center mt-1">
                 Pick the account type that matches what you’re trying to do.
               </p>
             </DialogHeader>
           </motion.div>
 
           <div className="overflow-y-auto min-h-0">
-            <div className="p-4 sm:p-5 bg-linear-to-br from-slate-50/70 via-white to-slate-50/40">
+            <div className="p-4 sm:p-5 bg-linear-to-br from-slate-50/70 via-white to-slate-50/40 dark:from-slate-900 dark:via-slate-900 dark:to-slate-950">
               <div className="grid grid-cols-1 gap-3 sm:gap-4 md:items-stretch">
                 <motion.div
                   variants={staggerItem}
@@ -242,13 +242,13 @@ export function AuthChoiceModal({ open, onOpenChange }) {
 
             <motion.div
               variants={staggerItem}
-              className="px-5 sm:px-7 py-3 flex items-center justify-center border-t border-slate-100 bg-white"
+              className="px-5 sm:px-7 py-3 flex items-center justify-center border-t border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900"
             >
               <div className="w-full flex items-center justify-between gap-3">
                 <button
                   type="button"
                   onClick={() => onOpenChange(false)}
-                  className="text-sm text-slate-600 hover:text-slate-900 font-semibold focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-slate-500/20 rounded-lg px-3 py-2"
+                  className="text-sm text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-semibold focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-slate-500/20 rounded-lg px-3 py-2"
                 >
                   Cancel
                 </button>

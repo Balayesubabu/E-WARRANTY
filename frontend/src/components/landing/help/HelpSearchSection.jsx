@@ -12,7 +12,7 @@ export function HelpSearchSection() {
   };
 
   return (
-    <section id="help-search" className="py-2 lg:py-4 bg-sky-50/50 scroll-mt-16 lg:scroll-mt-20">
+    <section id="help-search" className="py-2 lg:py-4 bg-sky-50/50 dark:bg-sky-950/30 scroll-mt-16 lg:scroll-mt-20">
       <Container>
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-slate-900 mb-3">
@@ -23,7 +23,7 @@ export function HelpSearchSection() {
           </p>
           <form
             onSubmit={handleSearch}
-            className="flex max-w-2xl mx-auto rounded-xl border-2 border-[#0284c7] overflow-hidden bg-white focus-within:ring-2 focus-within:ring-[#0284c7] focus-within:ring-offset-2"
+            className="flex max-w-2xl mx-auto rounded-xl border-2 border-[#0284c7] overflow-hidden bg-white dark:bg-slate-900 focus-within:ring-2 focus-within:ring-[#0284c7] focus-within:ring-offset-2 dark:focus-within:ring-offset-slate-950"
           >
             <div className="relative flex-1 flex items-center">
               <Search className="absolute left-4 w-5 h-5 text-slate-400 pointer-events-none" />
@@ -32,7 +32,7 @@ export function HelpSearchSection() {
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 placeholder="Search for articles, guides, or questions..."
-                className="w-full pl-12 pr-4 py-3 bg-transparent text-slate-900 placeholder-slate-400 focus:outline-none"
+                className="w-full pl-12 pr-4 py-3 bg-transparent text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none"
               />
             </div>
             <button
