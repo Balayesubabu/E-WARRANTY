@@ -32,14 +32,14 @@ const industries = [
 
 export function IndustriesSection() {
   return (
-    <section id="industries" className="py-12 lg:py-16 bg-slate-50 scroll-mt-16 lg:scroll-mt-20">
+    <section id="industries" className="py-12 lg:py-16 bg-slate-50 dark:bg-slate-900 scroll-mt-16 lg:scroll-mt-20">
       <Container>
         {/* Section Header */}
         <div className="text-center mb-10 lg:mb-12">
-          <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#0f172a] mb-3">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#0f172a] dark:text-slate-100 mb-3">
             Applicable Across Industries
           </h2>
-          <p className="text-slate-600 text-sm sm:text-base max-w-2xl mx-auto">
+          <p className="text-slate-600 dark:text-slate-300 text-sm sm:text-base max-w-2xl mx-auto">
             Whether automotive, electronics, home-appliances or more — E-Warrantify works
             seamlessly across all sectors
           </p>

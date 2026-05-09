@@ -28,14 +28,14 @@ const stakeholderCards = [
 
 export function HowItWorksSection() {
   return (
-    <section id="solutions" className="py-8 lg:py-10 bg-white scroll-mt-16 lg:scroll-mt-20">
+    <section id="solutions" className="py-8 lg:py-10 bg-white dark:bg-slate-950 scroll-mt-16 lg:scroll-mt-20">
       <Container>
         {/* Section Header */}
         <div className="text-center mb-6 lg:mb-8">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 mb-4">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 dark:text-slate-100 mb-4">
             Built for Every Stakeholder
           </h2>
-          <p className="text-sky-600 text-base lg:text-lg font-medium max-w-2xl mx-auto">
+          <p className="text-sky-600 dark:text-sky-400 text-base lg:text-lg font-medium max-w-2xl mx-auto">
             Purpose-built workflows for brands, dealers, and customers—connected in one platform.
           </p>
         </div>
@@ -47,22 +47,22 @@ export function HowItWorksSection() {
             return (
               <div
                 key={card.title}
-                className="rounded-2xl bg-slate-100/80 p-5 lg:p-6 shadow-sm border border-slate-200/60 flex flex-col"
+                className="rounded-2xl bg-slate-100/80 dark:bg-slate-800/80 p-5 lg:p-6 shadow-sm border border-slate-200/60 dark:border-slate-700/80 flex flex-col"
               >
-                <div className="w-10 h-10 rounded-xl bg-sky-100 flex items-center justify-center mb-4">
+                <div className="w-10 h-10 rounded-xl bg-sky-100 dark:bg-sky-950 flex items-center justify-center mb-4">
                   <Icon className="w-6 h-6 text-[#0284c7]" strokeWidth={1.5} />
                 </div>
-                <h3 className="text-lg font-semibold text-slate-900 mb-2">{card.title}</h3>
-                <p className="text-slate-600 text-sm leading-relaxed mb-4 flex-1">
+                <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-100 mb-2">{card.title}</h3>
+                <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-4 flex-1">
                   {card.description}
                 </p>
                 <ul className="space-y-2.5">
                   {card.features.map((feature) => (
                     <li key={feature} className="flex items-center gap-3">
-                      <span className="w-5 h-5 rounded-full bg-emerald-100 flex items-center justify-center shrink-0">
+                      <span className="w-5 h-5 rounded-full bg-emerald-100 dark:bg-emerald-950 flex items-center justify-center shrink-0">
                         <Check className="w-3 h-3 text-emerald-600" strokeWidth={2.5} />
                       </span>
-                      <span className="text-slate-700 text-sm">{feature}</span>
+                      <span className="text-slate-700 dark:text-slate-200 text-sm">{feature}</span>
                     </li>
                   ))}
                 </ul>
