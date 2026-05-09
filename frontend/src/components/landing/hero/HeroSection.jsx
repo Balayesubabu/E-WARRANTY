@@ -18,13 +18,13 @@ export function HeroSection() {
   };
 
   return (
-    <section id="home" className="relative overflow-hidden bg-white scroll-mt-16 lg:scroll-mt-20">
+    <section id="home" className="relative overflow-hidden bg-white dark:bg-slate-950 scroll-mt-16 lg:scroll-mt-20">
       <Container className="relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center py-6 lg:py-8">
           {/* Left column - Marketing content */}
           <div className="order-2 lg:order-1">
             {/* Brand pill badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-sky-50 border border-sky-100 mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-sky-50 border border-sky-100 dark:bg-sky-950/50 dark:border-sky-800 mb-6">
               <span className="w-2 h-2 rounded-full bg-[#1A7FC1]" />
               <span className="text-[#1A7FC1] font-semibold text-xs uppercase tracking-wider">
                 E-WARRANTIFY
@@ -39,7 +39,7 @@ export function HeroSection() {
             </h1>
 
             {/* Description */}
-            <p className="text-base lg:text-lg text-slate-600 mb-8 max-w-xl leading-relaxed">
+            <p className="text-base lg:text-lg text-slate-600 dark:text-slate-300 mb-8 max-w-xl leading-relaxed">
               Issue digital warranty certificates, register sales in seconds, route service requests, and track claims
               across your entire dealer network—securely, with real-time visibility.
             </p>
@@ -64,7 +64,7 @@ export function HeroSection() {
                 <button
                   type="button"
                   onClick={() => navigate("/api-sales")}
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3.5 border border-slate-200 bg-white text-slate-700 font-semibold rounded-lg hover:bg-slate-50 transition-colors"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3.5 border border-slate-200 bg-white text-slate-700 font-semibold rounded-lg hover:bg-slate-50 dark:border-slate-600 dark:bg-slate-800 dark:text-slate-200 dark:hover:bg-slate-700 transition-colors"
                 >
                   <Code2 className="w-4 h-4" />
                   Explore API
@@ -72,7 +72,7 @@ export function HeroSection() {
               </div>
               <button
                 onClick={handleViewDemo}
-                className="inline-flex items-center gap-2 text-slate-500 hover:text-[#1A7FC1] text-sm font-medium transition-colors w-fit"
+                className="inline-flex items-center gap-2 text-slate-500 hover:text-[#1A7FC1] dark:text-slate-400 dark:hover:text-sky-400 text-sm font-medium transition-colors w-fit"
               >
                 <span className="leading-none">View Demo</span>
                 <ArrowRight className="w-4 h-4 shrink-0" strokeWidth={2.5} />

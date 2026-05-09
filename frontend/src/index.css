@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 /* Tailwind CSS v4 directives - @apply, @theme, @layer are valid */
 :root {
   --font-size: 16px;

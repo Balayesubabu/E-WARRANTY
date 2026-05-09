@@ -4,7 +4,7 @@ import { Container } from "../layout/Container";
 
 function NetworkIllustration() {
   return (
-    <div className="rounded-2xl bg-slate-900 border border-sky-200/60 p-7 lg:p-8 overflow-hidden shadow-xl shadow-slate-200/40">
+    <div className="rounded-2xl bg-slate-900 border border-sky-200/60 dark:border-slate-600 p-7 lg:p-8 overflow-hidden shadow-xl shadow-slate-200/40 dark:shadow-slate-950/50">
       <svg
         viewBox="0 0 280 200"
         className="w-full h-auto"
@@ -54,19 +54,19 @@ function NetworkIllustration() {
 
 export function OnboardingSection() {
   return (
-    <section id="onboarding" className="py-6 lg:py-8 bg-white scroll-mt-16 lg:scroll-mt-20">
+    <section id="onboarding" className="py-6 lg:py-8 bg-white dark:bg-slate-950 scroll-mt-16 lg:scroll-mt-20">
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
           {/* Left column - Content and cards */}
           <div>
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-50 border border-sky-100 text-sky-700 text-xs font-semibold uppercase tracking-wider mb-4">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-50 border border-sky-100 dark:bg-sky-950/50 dark:border-sky-800 text-sky-700 dark:text-sky-300 text-xs font-semibold uppercase tracking-wider mb-4">
               <span className="w-1.5 h-1.5 rounded-full bg-[#0284c7]" aria-hidden />
               Onboarding
             </div>
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 mb-4">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 dark:text-slate-100 mb-4">
               Launch your warranty program faster
             </h2>
-            <p className="text-slate-600 text-base lg:text-lg leading-relaxed mb-6">
+            <p className="text-slate-600 dark:text-slate-300 text-base lg:text-lg leading-relaxed mb-6">
               Bring dealers, staff, and service centers online with secure access, role-based permissions, and a guided setup
               that scales with your network.
             </p>
@@ -82,15 +82,15 @@ export function OnboardingSection() {
                 return (
                   <div
                     key={item.title}
-                    className="group rounded-2xl bg-slate-50 border border-slate-200/70 p-4 hover:bg-white hover:shadow-md hover:shadow-slate-200/60 transition-all"
+                    className="group rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200/70 dark:border-slate-700 p-4 hover:bg-white dark:hover:bg-slate-800 hover:shadow-md hover:shadow-slate-200/60 dark:hover:shadow-slate-900/40 transition-all"
                   >
                     <div className="flex items-center gap-2.5 mb-2">
-                      <div className="w-9 h-9 rounded-xl bg-sky-100 flex items-center justify-center shrink-0 group-hover:bg-sky-200 transition-colors">
+                      <div className="w-9 h-9 rounded-xl bg-sky-100 dark:bg-sky-950 flex items-center justify-center shrink-0 group-hover:bg-sky-200 dark:group-hover:bg-sky-900 transition-colors">
                         <Icon className="w-5 h-5 text-[#0284c7]" strokeWidth={1.75} />
                       </div>
                       <h3 className="text-sm font-semibold text-slate-900">{item.title}</h3>
                     </div>
-                    <p className="text-xs text-slate-600 leading-relaxed">{item.desc}</p>
+                    <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">{item.desc}</p>
                   </div>
                 );
               })}
@@ -109,12 +109,12 @@ export function OnboardingSection() {
               <button
                 type="button"
                 onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white border border-slate-200 text-slate-700 text-sm font-semibold hover:bg-slate-50 transition-colors"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-600 text-slate-700 dark:text-slate-200 text-sm font-semibold hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors"
               >
                 Talk to us
                 <ArrowRight className="w-4 h-4" />
               </button>
-              <p className="text-xs text-slate-500">
+              <p className="text-xs text-slate-500 dark:text-slate-400">
                 Setup takes minutes, not weeks.
               </p>
             </div>

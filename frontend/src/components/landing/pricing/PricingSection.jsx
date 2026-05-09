@@ -64,17 +64,17 @@ export function PricingSection() {
     return () => document.removeEventListener("visibilitychange", onVisible);
   }, [fetchData]);
   return (
-    <section id="pricing" className="py-6 lg:py-8 bg-slate-50 scroll-mt-16 lg:scroll-mt-20">
+    <section id="pricing" className="py-6 lg:py-8 bg-slate-50 dark:bg-slate-950 scroll-mt-16 lg:scroll-mt-20">
       <Container>
         <div className="text-center mb-6 lg:mb-8">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-amber-100 rounded-full mb-3">
-            <Coins className="w-5 h-5 text-amber-600" />
-            <span className="text-amber-700 font-medium text-sm">Pay As You Go</span>
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-amber-100 dark:bg-amber-950/50 rounded-full mb-3">
+            <Coins className="w-5 h-5 text-amber-600 dark:text-amber-400" />
+            <span className="text-amber-700 dark:text-amber-300 font-medium text-sm">Pay As You Go</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#0f172a] mb-2">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#0f172a] dark:text-slate-100 mb-2">
             Simple Credit-Based Pricing
           </h2>
-          <p className="text-slate-600 text-sm sm:text-base lg:text-lg max-w-2xl mx-auto">
+          <p className="text-slate-600 dark:text-slate-300 text-sm sm:text-base lg:text-lg max-w-2xl mx-auto">
             1 credit = 10¢. Buy credits to generate warranty codes (3mo={warrantyCosts[3] ?? 1} credit, 6mo={warrantyCosts[6] ?? 2}, 1yr={warrantyCosts[12] ?? 4} per product). No monthly fees!
           </p>
         </div>
@@ -87,7 +87,7 @@ export function PricingSection() {
         ) : packages.length > 0 ? (
           <>
             {error ? (
-              <div className="text-center pb-4 text-xs text-slate-500">{error}</div>
+              <div className="text-center pb-4 text-xs text-slate-500 dark:text-slate-400">{error}</div>
             ) : null}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
             {packages.map((pkg) => (
@@ -110,7 +110,7 @@ export function PricingSection() {
 
         {/* What Ecoins Can Do */}
         <div className="mt-8 max-w-4xl mx-auto">
-          <h3 className="text-base sm:text-lg font-semibold text-slate-800 text-center mb-5">
+          <h3 className="text-base sm:text-lg font-semibold text-slate-800 dark:text-slate-200 text-center mb-5">
             Warranty Costs (1 credit = 10¢)
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
@@ -122,13 +122,13 @@ export function PricingSection() {
             ].map((item) => (
               <div
                 key={item.action}
-                className="group flex flex-col items-center p-3 bg-white rounded-xl border border-slate-200 hover:border-sky-200 hover:shadow-sm transition-all"
+                className="group flex flex-col items-center p-3 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-sky-200 dark:hover:border-sky-600 hover:shadow-sm transition-all"
               >
                 <span className="text-xl sm:text-2xl font-bold text-[#0284c7] group-hover:-translate-y-px transition-transform">
                   {item.cost === 0 ? "FREE" : `${item.cost} ${item.cost === 1 ? "credit" : "credits"}`}
                 </span>
-                <span className="text-xs text-slate-500">{item.cents}</span>
-                <span className="text-sm text-slate-700 mt-1.5 text-center">{item.action}</span>
+                <span className="text-xs text-slate-500 dark:text-slate-400">{item.cents}</span>
+                <span className="text-sm text-slate-700 dark:text-slate-200 mt-1.5 text-center">{item.action}</span>
               </div>
             ))}
           </div>
@@ -136,19 +136,19 @@ export function PricingSection() {
 
         {/* Welcome Bonus Banner */}
         <div className="mt-7 max-w-3xl mx-auto">
-          <div className="bg-linear-to-r from-[#E8F4FC] to-[#D6EDFA] border border-[#A8D4F0] rounded-2xl p-4 sm:p-5 text-center">
+          <div className="bg-linear-to-r from-[#E8F4FC] to-[#D6EDFA] dark:from-slate-800 dark:to-slate-800 border border-[#A8D4F0] dark:border-slate-600 rounded-2xl p-4 sm:p-5 text-center">
             <div className="flex items-center justify-center gap-2 mb-3">
               <Sparkles className="w-6 h-6 text-[#1A7FC1]" />
               <h4 className="text-lg font-semibold text-[#1A7FC1]">Profile Bonus!</h4>
             </div>
-            <p className="text-slate-700">
-              Complete your profile and get <strong className="text-[#1A7FC1]">20 FREE credits</strong> ($2 value)!
+            <p className="text-slate-700 dark:text-slate-200">
+              Complete your profile and get <strong className="text-[#1A7FC1] dark:text-sky-400">20 FREE credits</strong> ($2 value)!
             </p>
           </div>
         </div>
 
         <div className="mt-7 text-center">
-          <div className="inline-flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-slate-500">
+          <div className="inline-flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-slate-500 dark:text-slate-400">
             <span className="flex items-center gap-1.5">
               <span className="text-emerald-500">✓</span> No monthly subscription
             </span>

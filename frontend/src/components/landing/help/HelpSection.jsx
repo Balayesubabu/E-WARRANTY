@@ -63,14 +63,14 @@ export function HelpSection() {
   };
 
   return (
-    <section id="help" className="py-12 lg:py-16 bg-slate-50 scroll-mt-16 lg:scroll-mt-20">
+    <section id="help" className="py-12 lg:py-16 bg-slate-50 dark:bg-slate-900 scroll-mt-16 lg:scroll-mt-20">
       <Container>
         {/* Section Header */}
         <div className="text-center mb-10 lg:mb-12">
-          <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#0f172a] mb-3">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#0f172a] dark:text-slate-100 mb-3">
             Need Help?
           </h2>
-          <p className="text-slate-600 text-sm sm:text-base max-w-2xl mx-auto">
+          <p className="text-slate-600 dark:text-slate-300 text-sm sm:text-base max-w-2xl mx-auto">
             Quick access to guides, tutorials, and support resources
           </p>
         </div>
