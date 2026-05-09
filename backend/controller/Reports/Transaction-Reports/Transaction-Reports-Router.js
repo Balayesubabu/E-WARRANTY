@@ -1,0 +1,23 @@
+import { getExpenseTransactionReportEndpoint } from "./Expense-Transaction-Report/index.js";
+import { getExpenseCategoryReportEndpoint } from "./Expense-Category-Report/index.js";
+import {getPurchaseSummaryEndpoint} from "./Purchase-Summary/index.js";
+import {getSalesSummaryEndpoint} from "./Sales-Summary/index.js";
+import {Router} from "express";
+import {verifyToken} from "../../../middleware/verify-token.js";
+import auditTrailEndpoint from "./Audit-Trail/index.js";
+import billWiseProfitEndpoint from "./Bill-Wise-Profit/index.js";
+import cashAndBankReportEndpoint from "./Cash-and-Bank-Report/index.js";
+import daybookEndpoint from "./Daybook/index.js";
+import profitAndLossReportEndpoint from "./Profit-and-Loss-Report/index.js";
+const transactionReportsRouter = Router();
+
+transactionReportsRouter.get("/expense-transaction-report",verifyToken, getExpenseTransactionReportEndpoint);
+transactionReportsRouter.get("/expense-category-report",verifyToken, getExpenseCategoryReportEndpoint);
+transactionReportsRouter.get("/purchase-summary",verifyToken, getPurchaseSummaryEndpoint);
+transactionReportsRouter.get("/sales-summary",verifyToken, getSalesSummaryEndpoint);
+transactionReportsRouter.get("/audit-trail",verifyToken, auditTrailEndpoint);
+transactionReportsRouter.get("/bill-wise-profit",verifyToken, billWiseProfitEndpoint);
+transactionReportsRouter.get("/cash-and-bank",verifyToken, cashAndBankReportEndpoint);
+transactionReportsRouter.get("/daybook",verifyToken, daybookEndpoint);
+transactionReportsRouter.get("/profit-and-loss",verifyToken, profitAndLossReportEndpoint);
+export {transactionReportsRouter};

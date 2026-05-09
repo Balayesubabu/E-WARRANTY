@@ -1,0 +1,14 @@
+/node_modules
+.env
+package-lock.json
+combined.log
+error.log
+init-db.sh
+Dockerfile.postgres
+/prisma/migrations
+.DS_Store
+**/.DS_Store
+
+
+
+

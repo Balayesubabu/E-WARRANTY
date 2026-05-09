@@ -1,0 +1,2 @@
+id,provider_id,subscription_plan_id,start_date,end_date,amount_paid,is_active,is_cancelled,is_base_plan_active
+550e8400-e29b-41d4-a718-446655440000,550e8400-e29b-41d4-a717-446655440000,550e8400-e29b-41d4-a716-446655440201,2024-05-24T00:00:00.000Z,2050-12-31T23:59:59.999Z,0,true,false,true 

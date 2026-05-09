@@ -1,0 +1,2 @@
+id,provider_id,category_name,category_description,is_active,is_deleted,deleted_at
+550e8400-e29b-41d4-a730-446655440000,550e8400-e29b-41d4-a717-446655440000,Automotive Parts,Spare parts and consumables for vehicles,true,false, 

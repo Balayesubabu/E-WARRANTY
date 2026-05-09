@@ -1,0 +1,7 @@
+id,name,description,price,is_active,is_deleted,is_base_plan,created_at,updated_at
+550e8400-e29b-41d4-a716-446655440200,Developer Plan,Full access to all modules,0,true,false,false,2024-03-20T00:00:00.000Z,2024-03-20T00:00:00.000Z
+550e8400-e29b-41d4-a716-446655440201,Base Plan,Access to core business modules,199,true,false,true,2024-03-20T00:00:00.000Z,2024-03-20T00:00:00.000Z
+550e8400-e29b-41d4-a716-446655440202,Job Card Plan,Access to booking module,199,true,false,false,2024-03-20T00:00:00.000Z,2024-03-20T00:00:00.000Z
+550e8400-e29b-41d4-a716-446655440203,E Warranty Plan,Access to e warranty module,199,true,false,false,2024-03-20T00:00:00.000Z,2024-03-20T00:00:00.000Z
+550e8400-e29b-41d4-a716-446655440204,Trial Plan,Free 7-day trial with E-Warranty and Dashboard access,0,true,false,true,2024-03-20T00:00:00.000Z,2024-03-20T00:00:00.000Z
+550e8400-e29b-41d4-a716-446655440205,Free,Free plan with basic E-Warranty features,0,true,false,true,2024-03-20T00:00:00.000Z,2024-03-20T00:00:00.000Z

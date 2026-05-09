@@ -1,0 +1,23 @@
+import { Provider, SalesInvoice } from "../../../../prisma/db-models.js";
+
+const getProviderByUserId = async (user_id) => {
+  const provider = await Provider.findFirst({
+    where: {
+      user_id: user_id,
+    },
+  });
+  return provider;
+};
+
+const getProviderBooking = async (provider_id) => {
+  const bookings = await SalesInvoice.findMany({
+    where: {
+      provider_id: provider_id,
+      invoice_type: "Booking",
+    },
+    orderBy: { created_at: 'desc' }
+  });
+  return bookings;
+};
+
+export { getProviderByUserId, getProviderBooking };
