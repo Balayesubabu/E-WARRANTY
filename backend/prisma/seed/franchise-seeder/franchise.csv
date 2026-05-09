@@ -1,4 +1,0 @@
-id,provider_id,name,address,city,state,country,pin_code,email,phone_number,latitude,longitude,is_active,is_deleted,deleted_at,deleted_by_id,created_by_id
-550e8400-e29b-41d4-a720-446655440000,550e8400-e29b-41d4-a717-446655440000,Main Branch,123 Main Street,Mumbai,Maharashtra,India,400001,main@sharyo.in,9116502258,19.0760,72.8777,true,false,,,550e8400-e29b-41d4-a716-446655440000
-550e8400-e29b-41d4-a721-446655440000,550e8400-e29b-41d4-a717-446655440000,Andheri Branch,456 Andheri Road,Mumbai,Maharashtra,India,400093,andheri@sharyo.in,9116502259,19.1136,72.8697,true,false,,,550e8400-e29b-41d4-a716-446655440000
-550e8400-e29b-41d4-a722-446655440000,550e8400-e29b-41d4-a717-446655440000,Bandra Branch,789 Bandra West,Mumbai,Maharashtra,India,400050,bandra@sharyo.in,9116502260,19.0544,72.8405,true,false,,,550e8400-e29b-41d4-a716-446655440000 

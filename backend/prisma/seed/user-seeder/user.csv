@@ -1,2 +1,0 @@
-id,first_name,last_name,email,country_code,phone_number,password,user_type,role_id,is_active,is_phone_verified,is_email_verified,is_terms_and_conditions_accepted,is_privacy_policy_accepted
-550e8400-e29b-41d4-a716-446655440000,Mayank,Sharma,Mayank@sharyo.in,+91,9116502258,$2b$10$0.tLgvsZH1y0pNuY9CsTRufu2EQNcNX1d0r6dHSkmMbfK9gayf9g6,admin,1,true,true,true,true,true 
