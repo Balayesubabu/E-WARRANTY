@@ -68,6 +68,7 @@
       },
       "scripts": {
             "dev": "vite",
+            "git:demo": "node -e \"console.log('frontend git demo script OK')\"",
             "build": "vite build"
       }
 }
