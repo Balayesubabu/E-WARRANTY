@@ -3,7 +3,7 @@
  */
 
 export const PASSWORD_POLICY_MESSAGE =
-  "Password must be at least 8 characters and include Uppercase, lowercase, a number, and a special character.";
+  "Password must be at least 8 characters and include uppercase, lowercase, a number, and a special character.";
 
 export function isPortalPasswordStrong(password) {
   if (!password || typeof password !== "string") return false;

@@ -592,7 +592,7 @@ export function CustomerSelfRegister() {
                         <p className="text-blue-900 font-medium break-words">{lookedUpData.product_name}</p>
                       </div>
                       <div className="min-w-0">
-                        <p className="text-[#1A7FC1] text-xs">Warranty Codes</p>
+                        <p className="text-[#1A7FC1] text-xs">Warranty Code</p>
                         <p className="text-blue-900 font-mono break-all">{lookedUpData.warranty_code}</p>
                       </div>
                       <div className="min-w-0">
