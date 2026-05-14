@@ -588,7 +588,7 @@ export function CustomerSelfRegister() {
                   <div className="flex-1 min-w-0 bg-blue-50 rounded-xl p-4 border border-blue-100">
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-3 text-sm">
                       <div className="min-w-0">
-                        <p className="text-[#1A7FC1] text-xs">Product</p>
+                        <p className="text-[#1A7FC1] text-xs">Products</p>
                         <p className="text-blue-900 font-medium break-words">{lookedUpData.product_name}</p>
                       </div>
                       <div className="min-w-0">
