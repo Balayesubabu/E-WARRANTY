@@ -1,7 +1,7 @@
 const conflict = () => {
   return (
     <div>
-      <h1>Conflict</h1>
+      <h1>I Want to check the conflict</h1>
     </div>
   );
 };
