@@ -3,6 +3,7 @@ import { ChevronDown, ChevronUp } from "lucide-react";
 import { cn } from "../../ui/utils";
 
 export function FAQItem({ question, answer, isOpen, onToggle }) {
+  const version = "PRAKASH"
   return (
     <div className="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 overflow-hidden shadow-sm">
       <button
